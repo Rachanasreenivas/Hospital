@@ -2,7 +2,9 @@
 
 import { useState } from "react";
 import { FaComments, FaTimes } from "react-icons/fa"; // Add react-icons for better icons
+import dynamic from "next/dynamic";
 
+const DynamicChatBot = dynamic(() => import("./ChatBot"), { ssr: false });
 type Answer = {
   text: string;
   nextId?: number | null;
@@ -114,12 +116,16 @@ export default function ChatBot() {
       {!isOpen ? (
         <div className="flex items-end justify-end">
           <button
-          onClick={() => setIsOpen(true)}
-          className="bg-purple-600 text-white p-4 rounded-full shadow-xl hover:bg-purple-700 transition duration-300 flex items-center justify-center"
-        >
-          <FaComments className="text-xl" />
-        </button>
+            suppressHydrationWarning
+            onClick={() => setIsOpen(true)}
+            className="bg-purple-600 text-white p-4 rounded-full shadow-xl hover:bg-purple-700 transition duration-300 flex items-center justify-center"
+          >
+            <FaComments className="text-xl" />
+          </button>
+
+
         </div>
+
       ) : (
         <div className="bg-white border border-gray-300 rounded-xl shadow-xl overflow-hidden flex flex-col h-[500px] animate-fadeIn">
           <div className="bg-purple-600 text-white px-4 py-3 flex justify-between items-center">
@@ -157,6 +163,7 @@ export default function ChatBot() {
               >
                 ← Go Back
               </button>
+
             )}
           </div>
         </div>

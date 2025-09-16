@@ -416,7 +416,7 @@ const HeroSection = () => {
             key={index}
             src={src}
             alt={`Background Slide ${index + 1}`}
-            initial={{ opacity: 0}}
+            initial={{ opacity: 0 }}
             animate={{ opacity: currentIndex === index ? 1 : 0 }}
             transition={{ duration: 1 }}
             className="absolute inset-0 w-full h-full object-cover opacity-100 "
@@ -445,13 +445,15 @@ const HeroSection = () => {
           <div className="flex text-sm  sm:flex-row gap-4 justify-center lg:justify-start">
             <Link href="/services" suppressHydrationWarning>
               <motion.button
-                whileHover={{ scale: 1.03 }}
-                whileTap={{ scale: 0.97 }}
-                className="bg-purple-600 hover:bg-purple-800 text-white font-semibold px-6 py-3 rounded-lg shadow-md transition"
-              >
-                Explore Services
-              </motion.button>
+  whileHover={{ scale: 1.03 }}
+  whileTap={{ scale: 0.97 }}
+  className="bg-purple-600 hover:bg-purple-800 text-white font-semibold px-6 py-3 rounded-lg shadow-md transition"
+>
+  Explore Services
+</motion.button>
+
             </Link>
+
 
           </div>
         </motion.div>
