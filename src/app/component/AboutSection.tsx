@@ -86,7 +86,7 @@
 'use client';
 
 import React from 'react';
-import { motion } from 'framer-motion';
+import { motion, Variants } from "framer-motion";
 import {
   FaUserMd,
   FaAmbulance,
@@ -105,7 +105,7 @@ const stats = [
   { icon: <FaMapMarkedAlt />, label: 'Serving 5 Districts in Karnataka', bg: 'bg-gradient-to-r from-teal-100 to-teal-200' },
 ];
 
-const fadeInVariants = {
+const fadeInVariants: Variants = {
   hidden: { opacity: 0, y: 30 },
   visible: (i: number) => ({
     opacity: 1,

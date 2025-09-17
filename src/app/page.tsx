@@ -6,6 +6,7 @@ import HeroSection from './component/HeroSection'
 import LocationsSection from './component/LocationsSection'
 import ServicesSection from './component/ServicesSection'
 import Testimonial from './component/Testimonial'
+import VideoCarousel from './component/VideoCarousel'
 
 
 const page = () => {
@@ -15,6 +16,7 @@ const page = () => {
     <HeroSection />
     <AboutSection />
     <ServicesSection />
+    <VideoCarousel />
     {/* <FeaturedInitiative /> */}
     <LocationsSection />
     <Banner />
