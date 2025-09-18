@@ -51,7 +51,7 @@ const HospitalsPage = () => {
     { id: 9, name: 'CurePlus Hospital Bherya ', image: '/hospital/Bherya.png' ,phone:'08223-200604' },
     { id: 10, name: 'CurePlus Hospital  T. Narasipura', image: '/hospital/T. Narasipura.png',phone:'08227-200940' },
     { id: 11, name: 'CurePlus Hospital Handpost ', image: '/hospital/Handpost.png' ,phone:'8228257300' },
-    { id: 12, name: 'CurePlus Hospital Hosur ', image: '/hospital/Hosur.png' ,phone:'9035193777' },
+    { id: 12, name: 'CurePlus Hospital Hosur ', image: '/hospital/hosur.png' ,phone:'9035193777' },
     { id: 13, name: 'CurePlus Hospital Halli Mysore ', image: '/hospital/Halli Mysore.png' ,phone:'08175-273114' },
   ];
 
