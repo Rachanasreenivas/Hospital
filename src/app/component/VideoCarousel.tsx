@@ -1,4 +1,3 @@
-
 'use client';
 
 import React, { useState } from 'react';
@@ -16,8 +15,9 @@ const videoData = [
   },
   {
     type: 'youtube',
-    url: 'https://www.youtube.com/embed/9kKsxSGWYDM',
-    videoId: '9kKsxSGWYDM',
+    // UPDATED THE URL AND VIDEO ID FOR THE SECOND VIDEO
+    url: 'https://www.youtube.com/embed/TkLjQyNti78',
+    videoId: 'TkLjQyNti78',
     title: 'A New Chapter for CurePlus Hospitals',
     description: 'Construction of our new CurePlus Hospital has begun, reinforcing our commitment to advanced, compassionate healthcare for generations to come.',
   },
