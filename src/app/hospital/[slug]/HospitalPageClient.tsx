@@ -22,14 +22,14 @@ const hospitalsList = [
     { id: 3, name: 'CurePlus Kaveri Hospital', image: '/kaveri/kaveri1.png' },
     { id: 4, name: 'CurePlus Krishna Hospital', image: '/krishna/krishna1.png' },
     { id: 5, name: 'CurePlus Narasegowda Memorial Hospital', image: '/narasegowda/narasaregoda1.png' },
-    { id: 6, name: 'CurePlus Hospital Shanivarasanthe ', image: '/shanivarasanthe/shanivarasanth.png' },
-    { id: 7, name: 'CurePlus Hospital Ramapura ', image: '/rampura/rampura.png' },
-    { id: 8, name: 'CurePlus Hospital Terakanambi ', image: '/terakanamb/terakanamb.png' },
-    { id: 9, name: 'CurePlus Hospital Bherya ', image: '/bheraya/bheraya.png' },
-    { id: 10, name: 'CurePlus Hospital T. Narasipura ', image: '/Narasipura/Narasipura.png' },
+    { id: 6, name: 'CurePlus Hospital Shanivarasanthe', image: '/shanivarasanthe/shanivarasanthe.png' },
+    { id: 7, name: 'CurePlus Hospital Ramapura', image: '/rampura/rampura.png' },
+    { id: 8, name: 'CurePlus Hospital Terakanambi', image: '/terakanamb/terakanamb.png' },
+    { id: 9, name: 'CurePlus Hospital Bherya', image: '/bheraya/bheraya.png' },
+    { id: 10, name: 'CurePlus Hospital T. Narasipura', image: '/Narasipura/Narasipura.png' },
     { id: 11, name: 'CurePlus Hospital Handpost', image: '/HandPost/HandPost1.png' },
-    { id: 12, name: 'CurePlus Hospital Hosur ', image: '/hosur/hosur.png' },
-    { id: 13, name: 'CurePlus Hospital Halli Mysore ', image: '/halli/halli.png' },
+    { id: 12, name: 'CurePlus Hospital Hosur', image: '/hosur/hosur.png' },
+    { id: 13, name: 'CurePlus Hospital Halli Mysore', image: '/halli/halli.png' },
     
 ];
 
