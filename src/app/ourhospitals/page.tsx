@@ -1,205 +1,14 @@
-// 'use client';
-
-// import React from 'react';
-// import Footer from '../component/FooterSection';
-// import Image from 'next/image';
-// import { FaHospital } from 'react-icons/fa';
-// import { motion } from 'framer-motion';
-// import Link from 'next/link';
-
-// // Define fadeUp animation variants
-// const fadeUp = {
-//     hidden: { opacity: 0, y: 20 },
-//     visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
-// };
-
-// const HospitalsPage = () => {
-    
-//     const hospitals= [
-//         { id: 1, name: 'CurePlus  Disha Hospital', image: '/hospital/cure+.png' },
-//         { id: 2, name: 'CurePlus  Dharani Hospital', image: '/hospital/dharni.png' },
-//         { id: 3, name: 'CurePlus  Kaveri Hospital', image: '/hospital/kaveri.png' },
-//         { id: 4, name: 'CurePlus  Krishna Hospital', image: '/hospital/krishna.png' },
-//         { id: 5, name: 'CurePlus  Narasegowda Memorial Hospital', image: '/hospital/Narasegowda.png' },
-//         { id: 6, name: 'CurePlus  Shanivarasanthe Hospital', image: '/hospital/Shanivarasanth.png' },
-//         { id: 7, name: 'CurePlus  Ramapura Hospital', image: '/hospital/Ramapura.png' },
-//         { id: 8, name: 'CurePlus  Terakanambi Hospital', image: '/hospital/Terakanambi.png' },
-//         { id: 9, name: 'CurePlus  Bherya Hospital', image: '/hospital/Bherya.png' },
-//         { id: 10, name: 'CurePlus  T. Narasipura Hospital', image: '/hospital/T. Narasipura.png' },
-//         { id: 11, name: 'CurePlus  Handpost Hospital', image: '/hospital/Handpost.png' },
-//         { id: 12, name: 'CurePlus  Hosur Hospital', image: '/hospital/Hosur.png' },
-//         { id: 13, name: 'CurePlus  Halli Mysore Hospital', image: '/hospital/Halli Mysore.png' },
-//       ];
-
-//     const locations = [
-//         "T. Narasipura", "Bherya", "Hand Post (H.D. Kote)",
-//         "Halli Mysuru", "Hosur", "Ramapura", "Terakanambi"
-//     ];
-
-//     return (
-//         <>
-//             {/* Hero Section with Background Image */}
-//             <div className="relative h-[70vh] w-full">
-//                 <div className="absolute inset-0 bg-black/50 z-10" />
-//                 <Image
-//                     src="/Hospital-image/Hero3.jpeg" // Replace with your actual image path
-//                     alt="Cureplus Hospital Building"
-//                     fill
-//                     className="object-cover"
-//                     priority
-//                 />
-//                 <div className="relative z-20 flex flex-col items-center justify-center h-full text-center px-4">
-//                     <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">
-//                         Cureplus Hospitals
-//                     </h1>
-//                     <p className="text-xl md:text-2xl text-white max-w-3xl mb-8">
-//                         Compassionate Care, Advanced Healing
-//                     </p>
-//                     <p className="text-lg text-white max-w-4xl">
-//                         CurePlus Hospitals & Pharmas provides world-class healthcare, emergency services,
-//                         and affordable medication at 15+ state-of-the-art facilities across Karnataka.
-//                     </p>
-//                 </div>
-//             </div>
-
-//             {/* Main Content */}
-//             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-//                 {/* Introduction */}
-//                 <section className="mb-16">
-//                     <h2 className="text-3xl font-bold text-gray-800 mb-6 text-center">
-//                         Our Healthcare <span className="text-purple-600"> Network </span>
-//                     </h2>
-//                     <div className="grid md:grid-cols-2 gap-8 items-center">
-//                         <div>
-//                             <p className="text-lg text-gray-600 mb-6">
-//                                 Cureplus Hospitals is a growing network of healthcare facilities across the districts
-//                                 of Mysore, Chamarajanagar, and Kodagu, committed to providing accessible, affordable,
-//                                 and high-quality medical care.
-//                             </p>
-//                             <p className="text-lg text-gray-600">
-//                                 From urban centers to underserved regions, Cureplus Hospitals have established
-//                                 themselves as trusted healthcare providers, known for consistent, high-quality
-//                                 care and a deep commitment to the communities they serve.
-//                             </p>
-//                         </div>
-//                         <div className="bg-blue-50 p-8 rounded-xl border border-blue-100">
-//                             <h3 className="text-xl font-semibold text-purple-600 mb-4">Key Features</h3>
-//                             <ul className="space-y-3">
-//                                 <li className="flex items-start">
-//                                     <span className="text-purple-600 mr-2">✓</span>
-//                                     <span className='text-gray-600'>Over <strong>15+</strong> state-of-the-art facilities</span>
-//                                 </li>
-//                                 <li className="flex items-start">
-//                                     <span className="text-purple-600 mr-2">✓</span>
-//                                     {/* <span>NABH accredited flagship hospital</span> */}
-//                                     <span className='text-gray-600'>NABH accredited flagship hospital</span>
-//                                 </li>
-//                                 <li className="flex items-start">
-//                                     <span className="text-purple-600 mr-2">✓</span>
-//                                     {/* <span>Affordable generic medicines</span> */}
-//                                     <span className='text-gray-600'>Affordable generic medicines</span>
-//                                 </li>
-//                                 <li className="flex items-start">
-//                                     <span className="text-purple-600 mr-2">✓</span>
-//                                     {/* <span>Modern diagnostic services</span> */}
-//                                     <span className='text-gray-600'>Modern diagnostic services</span>
-//                                 </li>
-//                                 <li className="flex items-start">
-//                                     <span className="text-purple-600 mr-2">✓</span>
-//                                     {/* <span>Experienced medical professionals</span> */}
-//                                     <span className='text-gray-600'>Experienced medical professionals</span>
-//                                 </li>
-//                             </ul>
-//                         </div>
-//                     </div>
-//                 </section>
-
-//                 {/* Featured Hospitals */}
-//                 <motion.div
-//                     className="mb-20"
-//                     initial="hidden"
-//                     whileInView="visible"
-//                     viewport={{ once: true }}
-//                     variants={fadeUp}
-//                     custom={6}
-//                 >
-//                     <h2 className="text-3xl font-bold mb-6 text-purple-800">Hospitals Under SHPL</h2>
-//                     <ul className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 text-gray-800">
-//                         {hospitals.map((hospital, index) => (
-//                             <Link
-//                                 key={index}
-//                                 href={`/hospital/${hospital.id}`}>
-//                                 <motion.li
-//                                     key={index}
-//                                     className="flex flex-col bg-gray-50 rounded-xl border hover:shadow-md transition overflow-hidden"
-//                                     variants={fadeUp}
-//                                     custom={index}
-//                                 >
-//                                     <div className="w-full h-48 overflow-hidden">
-//                                         <img
-//                                             src={hospital.image}
-//                                             alt={hospital.name}
-//                                             className="w-full h-full object-cover"
-//                                         />
-//                                     </div>
-//                                     <div className="flex items-center gap-2 p-4">
-//                                         <FaHospital className="text-purple-800" />
-//                                         {/* <Link href={`/hospital/${hospital.id}`}> */}
-//                                         <p className="text-purple-800 hover:underline">{hospital.name}</p>
-//                                         {/* </Link> */}
-//                                     </div>
-//                                 </motion.li>
-//                             </Link>
-//                         ))}
-//                     </ul>
-//                 </motion.div>
-
-//                 {/* Other Locations */}
-//                 <section>
-//                     <h2 className="text-3xl font-bold text-gray-800 mb-6 text-center">
-//                         Additional Locations
-//                     </h2>
-//                     <div className="bg-gray-50 p-8 rounded-xl">
-//                         <p className="text-lg text-gray-600 mb-6 text-center">
-//                             We also operate 20-bed hospitals in these locations, offering specialized care
-//                             in orthopedics and general medicine:
-//                         </p>
-//                         <div className="flex flex-wrap justify-center gap-4">
-//                             {locations.map((location, index) => (
-//                                 <span key={index} className="bg-white px-4 py-2 rounded-full shadow-sm text-gray-700">
-//                                     {location}
-//                                 </span>
-//                             ))}
-//                         </div>
-//                     </div>
-//                 </section>
-//             </div>
-
-//             <Footer />
-//         </>
-//     );
-// };
-
-// export default HospitalsPage;
-
-
-
-
-
-
-
-
 'use client';
 
 import React from 'react';
-import Footer from '../component/FooterSection';
+// import Footer from '../component/FooterSection';
 import Image from 'next/image';
 import { FaHospital, FaClinicMedical, FaMapMarkerAlt } from 'react-icons/fa';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence, Variants } from 'framer-motion';
 import Link from 'next/link';
 
 // Enhanced animations
-const fadeUp = {
+const fadeUp: Variants = {
   hidden: { opacity: 0, y: 40 },
   visible: (i: number = 0) => ({
     opacity: 1,
@@ -212,7 +21,7 @@ const fadeUp = {
   })
 };
 
-const scaleIn = {
+const scaleIn: Variants = {
   hidden: { opacity: 0, scale: 0.9 },
   visible: {
     opacity: 1,
@@ -487,9 +296,10 @@ const HospitalsPage = () => {
         </motion.section>
       </div>
 
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };
 
 export default HospitalsPage;
+
