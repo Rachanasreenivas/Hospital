@@ -1,13 +1,17 @@
+
+
 'use client';
 
 import React from 'react';
-// import Footer from '../component/FooterSection';
+import Footer from '../component/FooterSection';
 import Image from 'next/image';
 import { FaHospital, FaClinicMedical, FaMapMarkerAlt } from 'react-icons/fa';
+// 1. ADDED Variants to the import
 import { motion, AnimatePresence, Variants } from 'framer-motion';
 import Link from 'next/link';
 
 // Enhanced animations
+// 2. ADDED the ': Variants' type here
 const fadeUp: Variants = {
   hidden: { opacity: 0, y: 40 },
   visible: (i: number = 0) => ({
@@ -21,6 +25,7 @@ const fadeUp: Variants = {
   })
 };
 
+// 3. ADDED the ': Variants' type here
 const scaleIn: Variants = {
   hidden: { opacity: 0, scale: 0.9 },
   visible: {
@@ -40,12 +45,12 @@ const HospitalsPage = () => {
     { id: 3, name: 'CurePlus  Kaveri Hospital', image: '/hospital/kaveri.png' ,phone:'08276 298998' },
     { id: 4, name: 'CurePlus  Krishna Hospital', image: '/hospital/krishna.png' ,phone:'08223-275798' },
     { id: 5, name: 'CurePlus  Narasegowda Memorial Hospital', image: '/hospital/Narasegowda.png' ,phone:'08236-200466' },
-    { id: 6, name: 'CurePlus Hospital  Shanivarasanthe', image: '/hospital/Shanivarasanthe.png' ,phone:'9035193777' },
+    { id: 6, name: 'CurePlus Hospital  Shanivarasanthe', image: '/hospital/Shanivarasanth.png' ,phone:'9035193777' },
     { id: 7, name: 'CurePlus Hospital  Ramapura ', image: '/hospital/Ramapura.png' ,phone:'08225-272200' },
     { id: 8, name: 'CurePlus Hospital  Terakanambi', image: '/hospital/Terakanambi.png' ,phone:'08229-222044' },
     { id: 9, name: 'CurePlus Hospital Bherya ', image: '/hospital/Bherya.png' ,phone:'08223-200604' },
     { id: 10, name: 'CurePlus Hospital  T. Narasipura', image: '/hospital/T. Narasipura.png',phone:'08227-200940' },
-    { id: 11, name: 'CurePlus Hospital Handpost ', image: '/hospital/Handpost1.png' ,phone:'8228257300' },
+    { id: 11, name: 'CurePlus Hospital Handpost ', image: '/hospital/Handpost.png' ,phone:'8228257300' },
     { id: 12, name: 'CurePlus Hospital Hosur ', image: '/hospital/Hosur.png' ,phone:'9035193777' },
     { id: 13, name: 'CurePlus Hospital Halli Mysore ', image: '/hospital/Halli Mysore.png' ,phone:'08175-273114' },
   ];
@@ -296,7 +301,7 @@ const HospitalsPage = () => {
         </motion.section>
       </div>
 
-      {/* <Footer /> */}
+       <Footer />
     </>
   );
 };
