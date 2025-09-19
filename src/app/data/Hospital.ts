@@ -163,12 +163,12 @@ export const hospitals: Hospital[] = [
     location: 'Shanivarasanthe, Kodagu District',
     icon: 'FaHospitalAlt',
     description: `CurePlus Shanivarasanthe Hospital is a 20-bedded multispecialty hospital serving rural Kodagu by providing affordable, quality healthcare. Located in Shanivarasanthe, As it offers both outpatient and inpatient services, emergency care and route checkups and, separate male and female wards,and world class facilities lab, X-ray, physiotherapy, pharmacy, and 24/7 ambulance support.Known for its expert care in orthopedics, gynecology, pediatrics, and general medicine, it’s a top choice for joint pain treatment in Shanivarasanthe, pregnancy care, and more. With well experienced bone doctors, gynecologists near Somwarpet, and reliable delivery services, it’s a go-to maternity hospital in Shanivarasanthe. As the best leading multispecialty hospital near Somwarpet, CurePlus hospital is also the most trusted emergency care provider to surrounding communities and continues its mission to deliver affordable and accessible healthcare across Kodagu.`,
-    imageUrl: '/shanivarasanthe/shanivarasanthe.png',
+    imageUrl: '/Shanivarasanthe/shanivarasanthe.png',
     gallery: [ 
-    '/shanivarasanthe/shanivarasanthe2.png', 
-    '/shanivarasanthe/shanivarasanthe3.png', 
-    '/shanivarasanthe/shanivarasanthe4.png', 
-    '/shanivarasanthe/shanivarasanthe1.png' 
+    '/Shanivarasanthe/shanivarasanthe2.png', 
+    '/Shanivarasanthe/shanivarasanthe3.png', 
+    '/Shanivarasanthe/shanivarasanthe4.png', 
+    '/Shanivarasanthe/shanivarasanthe1.png' 
 ],
     // gallery: [ '/shanivarasanthe/shanivarasanthe2.png', '/shanivarasanthe/shanivarasanthe3.png', '/shanivarasanthe/shanivarasanthe4.png', '/shanivarasanthe/shanivarasanthe1.png' ],
     services: [ { label: 'Orthopedics', icon: 'FaUserMd' }, { label: 'Gynecology', icon: 'FaUserMd' }, { label: 'Pediatrics', icon: 'FaUserMd' }, { label: 'General Medicine', icon: 'FaUserMd' } ],
