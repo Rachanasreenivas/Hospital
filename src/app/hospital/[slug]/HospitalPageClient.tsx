@@ -27,7 +27,7 @@ const hospitalsList = [
     { id: 8, name: 'CurePlus Hospital Terakanambi', image: '/terakanamb/terakanamb.png' },
     { id: 9, name: 'CurePlus Hospital Bherya', image: '/bheraya/bheraya.png' },
     { id: 10, name: 'CurePlus Hospital T. Narasipura', image: '/Narasipura/Narasipura.png' },
-    { id: 11, name: 'CurePlus Hospital Handpost', image: '/HandPost/HandPost1.png' },
+    { id: 11, name: 'CurePlus Hospital Handpost', image: '/handPost/handpost1.png' },
     { id: 12, name: 'CurePlus Hospital Hosur', image: '/hosur/hosur.png' },
     { id: 13, name: 'CurePlus Hospital Halli Mysore', image: '/halli/halli.png' },
     
