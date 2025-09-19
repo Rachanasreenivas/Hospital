@@ -45,7 +45,7 @@ const HospitalsPage = () => {
     { id: 3, name: 'CurePlus  Kaveri Hospital', image: '/hospital/kaveri.png' ,phone:'08276 298998' },
     { id: 4, name: 'CurePlus  Krishna Hospital', image: '/hospital/krishna.png' ,phone:'08223-275798' },
     { id: 5, name: 'CurePlus  Narasegowda Memorial Hospital', image: '/hospital/Narasegowda.png' ,phone:'08236-200466' },
-    { id: 6, name: 'CurePlus Hospital  Shanivarasanthe', image: '/hospital/shanivarasanthe.png' ,phone:'9035193777' },
+    { id: 6, name: 'CurePlus Hospital  Shanivarasanthe', image: '/Shanivarasanthe/shanivarasanthe.png' ,phone:'9035193777' },
     { id: 7, name: 'CurePlus Hospital  Ramapura ', image: '/hospital/Ramapura.png' ,phone:'08225-272200' },
     { id: 8, name: 'CurePlus Hospital  Terakanambi', image: '/hospital/Terakanambi.png' ,phone:'08229-222044' },
     { id: 9, name: 'CurePlus Hospital Bherya ', image: '/hospital/Bherya.png' ,phone:'08223-200604' },

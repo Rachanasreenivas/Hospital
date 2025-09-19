@@ -8,18 +8,19 @@ import { motion, AnimatePresence } from 'framer-motion';
 const videoData = [
   {
     type: 'youtube',
-    url: 'https://www.youtube.com/embed/TkLjQyNti78',
-    videoId: 'TkLjQyNti78',
-    title: 'A New Chapter for CurePlus Hospitals',
-    description: 'Construction of our new CurePlus Hospital has begun, reinforcing our commitment to advanced, compassionate healthcare for generations to come.',
+    url: 'https://www.youtube.com/embed/fE77gCpSnPM',
+    videoId: 'fE77gCpSnPM',
+    title: 'CurePlus Blood Centre | Our First Blood Donation Camp|17-09-2025',
+    description: ' CurePlus Blood Centre and ARC Sportzone Hebbal proudly hosted our first Blood Donation Camp under Raktadan Amrit Mahotsav 2.0, in association with Terapanth Yuvak Parishad Mysuru. Every donor not only gave the gift of life but was also supported with Sudofer Syrup, our own brand for community health. This isn’t just an event. It’s the start of a movement.Together, we save lives.',
   },
   {
     type: 'youtube',
-    url: 'https://www.youtube.com/embed/fE77gCpSnPM',
-    videoId: 'fE77gCpSnPM',
-    title: 'CurePlus Blood Centre | Our First Blood Donation Camp',
-    description: ' CurePlus Blood Centre and ARC Sportzone Hebbal proudly hosted our first Blood Donation Camp under Raktadan Amrit Mahotsav 2.0, in association with Terapanth Yuvak Parishad Mysuru. Every donor not only gave the gift of life but was also supported with Sudofer Syrup, our own brand for community health. This isn’t just an event. It’s the start of a movement.Together, we save lives.',
+    url: 'https://www.youtube.com/embed/TkLjQyNti78',
+    videoId: 'TkLjQyNti78',
+    title: 'A New Chapter for CurePlus Hospitals|04-09-2025',
+    description: 'Construction of our new CurePlus Hospital has begun, reinforcing our commitment to advanced, compassionate healthcare for generations to come.',
   },
+  
    {
     type: 'youtube',
     url: 'https://www.youtube.com/embed/TNoydh6wszw',
