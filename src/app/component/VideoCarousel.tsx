@@ -1,4 +1,4 @@
-  'use client';
+'use client';
 
 import React, { useState } from 'react';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
@@ -8,10 +8,17 @@ import { motion, AnimatePresence } from 'framer-motion';
 const videoData = [
   {
     type: 'youtube',
+    url: 'https://www.youtube.com/embed/b-bzT9WbjL0',
+    videoId: 'b-bzT9WbjL0',
+    title: 'POSH (Prevention of Sexual Harassment)Training  at CurePlus Hospitals | 18-09-2025',
+    description: 'CurePlus Hospitals hosted POSH training with Rtn. Col. Ravi Shirahatti (Retd.), engaging 238 plus employees and reinforcing our commitment to a safe, respectful, and inclusive workplace where everyone feels empowered.',
+  },
+  {
+    type: 'youtube',
     url: 'https://www.youtube.com/embed/fE77gCpSnPM',
     videoId: 'fE77gCpSnPM',
     title: 'CurePlus Blood Centre | Our First Blood Donation Camp|17-09-2025',
-    description: ' CurePlus Blood Centre and ARC Sportzone Hebbal proudly hosted our first Blood Donation Camp under Raktadan Amrit Mahotsav 2.0, in association with Terapanth Yuvak Parishad Mysuru. Every donor not only gave the gift of life but was also supported with Sudofer Syrup, our own brand for community health. This isn’t just an event. It’s the start of a movement.Together, we save lives.',
+    description: ' CurePlus Blood Centre and ARC Sportzone Hebbal, with Terapanth Yuvak Parishad Mysuru, hosted our first Blood Donation Camp under Raktadan Amrit Mahotsav 2.0. Donors gave the gift of life, supported by Sudofer Syrup for community health. More than an event it’s the start of a movement. Together, we save lives.',
   },
   {
     type: 'youtube',
