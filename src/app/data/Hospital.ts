@@ -163,7 +163,7 @@ export const hospitals: Hospital[] = [
     location: 'Shanivarasanthe, Kodagu District',
     icon: 'FaHospitalAlt',
     description: `CurePlus Shanivarasanthe Hospital is a 20-bedded multispecialty hospital serving rural Kodagu by providing affordable, quality healthcare. Located in Shanivarasanthe, As it offers both outpatient and inpatient services, emergency care and route checkups and, separate male and female wards,and world class facilities lab, X-ray, physiotherapy, pharmacy, and 24/7 ambulance support.Known for its expert care in orthopedics, gynecology, pediatrics, and general medicine, it’s a top choice for joint pain treatment in Shanivarasanthe, pregnancy care, and more. With well experienced bone doctors, gynecologists near Somwarpet, and reliable delivery services, it’s a go-to maternity hospital in Shanivarasanthe. As the best leading multispecialty hospital near Somwarpet, CurePlus hospital is also the most trusted emergency care provider to surrounding communities and continues its mission to deliver affordable and accessible healthcare across Kodagu.`,
-    imageUrl: '/rampura/shanivarasanthe.png',
+    imageUrl: '/shanivarasanthe/shanivarasanthe.png',
     gallery: [ '/shanivarasanthe/shanivarasanthe2.png', '/shanivarasanthe/shanivarasanthe3.png', '/shanivarasanthe/shanivarasanthe4.png', '/shanivarasanthe/shanivarasanthe1.png' ],
     services: [ { label: 'Orthopedics', icon: 'FaUserMd' }, { label: 'Gynecology', icon: 'FaUserMd' }, { label: 'Pediatrics', icon: 'FaUserMd' }, { label: 'General Medicine', icon: 'FaUserMd' } ],
     facilities: [ { label: '15+ Beds', icon: 'FaBed' }, { label: 'Advanced Diagnostic Tools', icon: 'FaXRay' }, { label: 'Private and Semi-Private Wards', icon: 'FaHospitalAlt' }, { label: 'Medico-Social Welfare Desk', icon: 'FaHospitalAlt' }, { label: '24/7 Ambulance Service', icon: 'FaHospitalAlt' }, { label: '24/7 Pharmacy Services', icon: 'FaHospitalAlt' }, { label: 'OPD & IPD Services', icon: 'FaXRay' }, { label: 'X-Ray', icon: 'FaXRay' }, { label: 'Pathology Lab', icon: 'FaXRay' } ],
@@ -175,10 +175,15 @@ export const hospitals: Hospital[] = [
       h1: 'CurePlus Hospital Shanivarasanthe',
       h2: '24x7 Hospital in Shanivarasanthe Near Me',
       keywords: [ "24x7 Hospital in Shanivarasanthe Near Me", "Hospital near me Shanivarasanthe", "Maternity hospital in Shanivarasanthe", "Pregnancy care near Shanivarasanthe", "Orthopedic hospital Shanivarasanthe", "Bone doctor in Shanivarasanthe", "Best 24/7 hospital near Somwarpet", "Gynecologist near Somwarpet", "Joint pain treatment Shanivarasanthe", "Delivery hospital near Shanivarasanthe", "Emergency care hospital Somwarpet" ],
-      altTexts: [], // Alt texts were missing for this one
+      altTexts: [
+        "CurePlus Hospital Shanivarasanthe advanced X-ray services",
+        "The pharmacy at CurePlus Hospital Shanivarasanthe",
+        "CurePlus Hospital Shanivarasanthe reception desk",
+        "Patient ward at CurePlus Hospital Shanivarasanthe"
+      ],
       canonical: "https://cureplushospitals.com/our-hospitals/cureplus-shanivarasanthe"
     },
-    jsonLd: { "@context": "https://schema.org", "@type": "LocalBusiness", "name": "CurePlus Hospital Shanivarasanthe", "image": "https://cureplushospitals.com/cureplushospital/shanivarasanthe.png", "url": "https://cureplushospitals.com/our-hospitals/cureplus-Shanivarasanthe", "telephone": "08276 - 280908", "address": { "@type": "PostalAddress", "streetAddress": "Yashasvi Convention Hall, Kaveri Road, Shanivarasante, Somawarpet (Tq), Kodagu District", "addressLocality": "Shanivarasanthe", "postalCode": "571235", "addressCountry": "IN" }, "geo": { "@type": "GeoCoordinates", "latitude": 12.729261417129187, "longitude": 75.88658202837034 }, "openingHoursSpecification": { "@type": "OpeningHoursSpecification", "dayOfWeek": [ "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday" ], "opens": "00:00", "closes": "23:59" }, "sameAs": [ "https://www.facebook.com/cureplushospitals", "https://www.instagram.com/cureplus_hospitals/", "https://www.youtube.com/@CurePlusHospitals", "https://cureplushospitals.com/" ] }
+    jsonLd: { "@context": "https://schema.org", "@type": "LocalBusiness", "name": "CurePlus Hospital Shanivarasanthe", "image": "https://cureplushospitals.com/shanivarasanthe/shanivarasanthe.png", "url": "https://cureplushospitals.com/our-hospitals/cureplus-shanivarasanthe", "telephone": "08276 - 280908", "address": { "@type": "PostalAddress", "streetAddress": "Yashasvi Convention Hall, Kaveri Road, Shanivarasante, Somawarpet (Tq), Kodagu District", "addressLocality": "Shanivarasanthe", "postalCode": "571235", "addressCountry": "IN" }, "geo": { "@type": "GeoCoordinates", "latitude": 12.729261417129187, "longitude": 75.88658202837034 }, "openingHoursSpecification": { "@type": "OpeningHoursSpecification", "dayOfWeek": [ "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday" ], "opens": "00:00", "closes": "23:59" }, "sameAs": [ "https://www.facebook.com/cureplushospitals", "https://www.instagram.com/cureplus_hospitals/", "https://www.youtube.com/@CurePlusHospitals", "https://cureplushospitals.com/" ] }
   },
   // 7. CurePlus Hospital Ramapura
   {

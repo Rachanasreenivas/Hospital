@@ -1,4 +1,4 @@
-'use client';
+  'use client';
 
 import React, { useState } from 'react';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
@@ -8,18 +8,24 @@ import { motion, AnimatePresence } from 'framer-motion';
 const videoData = [
   {
     type: 'youtube',
-    url: 'https://www.youtube.com/embed/TNoydh6wszw',
-    videoId: 'TNoydh6wszw',
-    title: 'CurePlus Hospitals – Stories of Healing & Hope',
-    description: 'CurePlus Hospitals is transforming rural healthcare in Karnataka with accessible, quality care that changes lives.',
-  },
-  {
-    type: 'youtube',
-    // UPDATED THE URL AND VIDEO ID FOR THE SECOND VIDEO
     url: 'https://www.youtube.com/embed/TkLjQyNti78',
     videoId: 'TkLjQyNti78',
     title: 'A New Chapter for CurePlus Hospitals',
     description: 'Construction of our new CurePlus Hospital has begun, reinforcing our commitment to advanced, compassionate healthcare for generations to come.',
+  },
+  {
+    type: 'youtube',
+    url: 'https://www.youtube.com/embed/fE77gCpSnPM',
+    videoId: 'fE77gCpSnPM',
+    title: 'CurePlus Blood Centre | Our First Blood Donation Camp',
+    description: ' CurePlus Blood Centre and ARC Sportzone Hebbal proudly hosted our first Blood Donation Camp under Raktadan Amrit Mahotsav 2.0, in association with Terapanth Yuvak Parishad Mysuru. Every donor not only gave the gift of life but was also supported with Sudofer Syrup, our own brand for community health. This isn’t just an event. It’s the start of a movement.Together, we save lives.',
+  },
+   {
+    type: 'youtube',
+    url: 'https://www.youtube.com/embed/TNoydh6wszw',
+    videoId: 'TNoydh6wszw',
+    title: 'CurePlus Hospitals – Stories of Healing & Hope',
+    description: 'CurePlus Hospitals is transforming rural healthcare in Karnataka with accessible, quality care that changes lives.',
   },
 ];
 
@@ -40,7 +46,7 @@ const VideoCarousel = () => {
     <section id="video" className="py-20 bg-gray-50">
       <div className="max-w-4xl mx-auto px-6 text-center">
         <h2 className="text-4xl font-extrabold text-purple-800 mb-6">
-          Patient Stories & Highlights
+          Our Stories & Highlights
         </h2>
 
         {/* New container for video and arrows */}

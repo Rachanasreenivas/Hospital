@@ -28,7 +28,7 @@ const hospitalsList = [
   { id: 3, name: 'CurePlus  Kaveri Hospital', image: '/hospital/kaveri.png' },
   { id: 4, name: 'CurePlus  Krishna Hospital', image: '/hospital/krishna.png' },
   { id: 5, name: 'CurePlus  Narasegowda Memorial Hospital', image: '/hospital/Narasegowda.png' },
-  { id: 6, name: 'CurePlus  Shanivarasanthe Hospital', image: '/hospital/Shanivarasanth.png' },
+  { id: 6, name: 'CurePlus  Shanivarasanthe Hospital', image: '/hospital/shanivarasanthe.png' },
   { id: 7, name: 'CurePlus  Ramapura Hospital', image: '/hospital/Ramapura.png' },
   { id: 8, name: 'CurePlus  Terakanambi Hospital', image: '/hospital/Terakanambi.png' },
   { id: 9, name: 'CurePlus  Bherya Hospital', image: '/hospital/Bherya.png' },
