@@ -4,35 +4,38 @@ import React, { useState } from 'react';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import { motion, AnimatePresence } from 'framer-motion';
 
-// The unique text content is now part of the data for each video
+// I have updated the data to separate the title and date for better display
 const videoData = [
   {
     type: 'youtube',
     url: 'https://www.youtube.com/embed/b-bzT9WbjL0',
     videoId: 'b-bzT9WbjL0',
-    title: 'POSH (Prevention of Sexual Harassment)Training  at CurePlus Hospitals | 18-09-2025',
-    description: 'CurePlus Hospitals hosted POSH training with Rtn. Col. Ravi Shirahatti (Retd.), engaging 238 plus employees and reinforcing our commitment to a safe, respectful, and inclusive workplace where everyone feels empowered.',
+    title: 'POSH (Prevention of Sexual Harassment) Training at CurePlus Hospitals',
+    date: '18-09-2025',
+    description: 'CurePlus Hospitals hosted POSH training with Rtn. Col. Ravi Shirahatti (Retd.), engaging 238 plus employees and reinforcing our commitment to a safe, respectful, and inclusive workplace where everyone feels empowered.',
   },
   {
     type: 'youtube',
     url: 'https://www.youtube.com/embed/fE77gCpSnPM',
     videoId: 'fE77gCpSnPM',
-    title: 'CurePlus Blood Centre | Our First Blood Donation Camp|17-09-2025',
-    description: ' CurePlus Blood Centre and ARC Sportzone Hebbal, with Terapanth Yuvak Parishad Mysuru, hosted our first Blood Donation Camp under Raktadan Amrit Mahotsav 2.0. Donors gave the gift of life, supported by Sudofer Syrup for community health. More than an event it’s the start of a movement. Together, we save lives.',
+    title: 'CurePlus Blood Centre | Our First Blood Donation Camp',
+    date: '17-09-2025',
+    description: ' CurePlus Blood Centre and ARC Sportzone Hebbal, with Terapanth Yuvak Parishad Mysuru, hosted our first Blood Donation Camp under Raktadan Amrit Mahotsav 2.0. Donors gave the gift of life, supported by Sudofer Syrup for community health. More than an event it’s the start of a movement. Together, we save lives.',
   },
   {
     type: 'youtube',
     url: 'https://www.youtube.com/embed/TkLjQyNti78',
     videoId: 'TkLjQyNti78',
-    title: 'A New Chapter for CurePlus Hospitals|04-09-2025',
+    title: 'A New Chapter for CurePlus Hospitals',
+    date: '04-09-2025',
     description: 'Construction of our new CurePlus Hospital has begun, reinforcing our commitment to advanced, compassionate healthcare for generations to come.',
   },
-  
    {
     type: 'youtube',
     url: 'https://www.youtube.com/embed/TNoydh6wszw',
     videoId: 'TNoydh6wszw',
     title: 'CurePlus Hospitals – Stories of Healing & Hope',
+    date: null, // No date for this video
     description: 'CurePlus Hospitals is transforming rural healthcare in Karnataka with accessible, quality care that changes lives.',
   },
 ];
@@ -109,6 +112,12 @@ const VideoCarousel = () => {
               <h3 className="text-2xl font-bold text-purple-800">
                 {currentVideo.title}
               </h3>
+              {/* This new part renders the date only if it exists */}
+              {currentVideo.date && (
+                <p className="text-lg text-purple-700 mt-1">
+                  {currentVideo.date}
+                </p>
+              )}
               <p className="text-md text-gray-600 mt-3 max-w-2xl mx-auto">
                 {currentVideo.description}
               </p>
