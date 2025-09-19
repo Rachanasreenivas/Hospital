@@ -164,7 +164,13 @@ export const hospitals: Hospital[] = [
     icon: 'FaHospitalAlt',
     description: `CurePlus Shanivarasanthe Hospital is a 20-bedded multispecialty hospital serving rural Kodagu by providing affordable, quality healthcare. Located in Shanivarasanthe, As it offers both outpatient and inpatient services, emergency care and route checkups and, separate male and female wards,and world class facilities lab, X-ray, physiotherapy, pharmacy, and 24/7 ambulance support.Known for its expert care in orthopedics, gynecology, pediatrics, and general medicine, it’s a top choice for joint pain treatment in Shanivarasanthe, pregnancy care, and more. With well experienced bone doctors, gynecologists near Somwarpet, and reliable delivery services, it’s a go-to maternity hospital in Shanivarasanthe. As the best leading multispecialty hospital near Somwarpet, CurePlus hospital is also the most trusted emergency care provider to surrounding communities and continues its mission to deliver affordable and accessible healthcare across Kodagu.`,
     imageUrl: '/shanivarasanthe/shanivarasanthe.png',
-    gallery: [ '/shanivarasanthe/shanivarasanthe2.png', '/shanivarasanthe/shanivarasanthe3.png', '/shanivarasanthe/shanivarasanthe4.png', '/shanivarasanthe/shanivarasanthe1.png' ],
+    gallery: [ 
+    '/shanivarasanthe/shanivarasanthe2.png', 
+    '/shanivarasanthe/shanivarasanthe3.png', 
+    '/shanivarasanthe/shanivarasanthe4.png', 
+    '/shanivarasanthe/shanivarasanthe1.png' 
+],
+    // gallery: [ '/shanivarasanthe/shanivarasanthe2.png', '/shanivarasanthe/shanivarasanthe3.png', '/shanivarasanthe/shanivarasanthe4.png', '/shanivarasanthe/shanivarasanthe1.png' ],
     services: [ { label: 'Orthopedics', icon: 'FaUserMd' }, { label: 'Gynecology', icon: 'FaUserMd' }, { label: 'Pediatrics', icon: 'FaUserMd' }, { label: 'General Medicine', icon: 'FaUserMd' } ],
     facilities: [ { label: '15+ Beds', icon: 'FaBed' }, { label: 'Advanced Diagnostic Tools', icon: 'FaXRay' }, { label: 'Private and Semi-Private Wards', icon: 'FaHospitalAlt' }, { label: 'Medico-Social Welfare Desk', icon: 'FaHospitalAlt' }, { label: '24/7 Ambulance Service', icon: 'FaHospitalAlt' }, { label: '24/7 Pharmacy Services', icon: 'FaHospitalAlt' }, { label: 'OPD & IPD Services', icon: 'FaXRay' }, { label: 'X-Ray', icon: 'FaXRay' }, { label: 'Pathology Lab', icon: 'FaXRay' } ],
     infrastructure: 'State-of-the-art medical infrastructure, ensuring personalized and specialized treatments.',
