@@ -1,40 +1,35 @@
-// // /app/hospital/[slug]/page.tsx
-
 // import { hospitals } from '@/app/data/Hospital';
 // import { Metadata } from 'next';
 // import HospitalPageClient from './HospitalPageClient';
 // import { notFound } from 'next/navigation';
 // import Script from 'next/script';
 
-// // Define a type for the component's props
-// type Props = {
-//   params: { slug: string };
-// };
+// // This function tells Next.js all the possible URL slugs for your hospitals.
+// export async function generateStaticParams() {
+//   return hospitals.map((hospital) => ({
+//     slug: hospital.slug,
+//   }));
+// }
 
-// // --- NEW: A dedicated async function to get hospital data ---
+// // This function finds the hospital by its slug.
 // async function getHospital(slug: string) {
-//   const hospitalId = Number(slug);
-//   const hospital = hospitals.find((h) => h.id === hospitalId);
+//   const hospital = hospitals.find((h) => h.slug === slug);
 //   return hospital;
 // }
-// // type Props = {
-// //   params: { slug: string };
-// // };
 
-// // --- SEO METADATA FUNCTION ---
-// export async function generateMetadata({ params }: Props): Promise<Metadata> {
-//   // Use the new async function
+// // ✅ FIX: The props type is now defined inline to satisfy Next.js's build process.
+// export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
 //   const hospital = await getHospital(params.slug);
 
 //   if (!hospital) {
 //     return { title: 'Hospital Not Found' };
 //   }
-
+  
 //   const seo = hospital.seo;
-//   const title = seo?.title || `Best Hospital in ${hospital.location} | ${hospital.name}`;
-//   const description = seo?.description || `${hospital.name} is a leading multispecialty hospital in ${hospital.location}.`;
-//   const keywords = seo?.keywords || [hospital.name, hospital.location, 'hospital', 'healthcare'];
-//   const canonical = seo?.canonical || `https://cureplushospitals.com/our-hospitals/${hospital.id}`;
+//   const title = seo?.title || `${hospital.name} | CurePlus Hospitals`;
+//   const description = seo?.description || `Details for ${hospital.name}.`;
+//   const keywords = seo?.keywords || [hospital.name, hospital.location, 'hospital'];
+//   const canonical = seo?.canonical || `https://cureplushospitals.com/hospital/${params.slug}`;
 
 //   return {
 //     title,
@@ -47,22 +42,16 @@
 //       title,
 //       description,
 //       url: canonical,
-//       images: [{
-//           url: `https://cureplushospitals.com${hospital.imageUrl}`,
-//           alt: title,
-//       }],
-//       type: 'website',
-//     },
-//     robots: {
-//       index: true,
-//       follow: true,
+//       images: hospital.imageUrl ? [{
+//         url: `https://cureplushospitals.com${hospital.imageUrl}`,
+//         alt: title,
+//       }] : [],
 //     },
 //   };
 // }
 
-// // --- MAIN PAGE COMPONENT (SERVER COMPONENT) ---
-// const Page = async ({ params }: Props) => {
-//   // Use the new async function
+// // ✅ FIX: The props type is also defined inline here.
+// const Page = async ({ params }: { params: { slug: string } }) => {
 //   const hospital = await getHospital(params.slug);
 
 //   if (!hospital) {
@@ -71,7 +60,6 @@
 
 //   return (
 //     <>
-//       {/* Add JSON-LD Schema Markup here */}
 //       {hospital.jsonLd && (
 //         <Script
 //           id="hospital-schema"
@@ -89,97 +77,11 @@
 // export default Page;
 
 // /app/hospital/[slug]/page.tsx
+// /app/hospital/[slug]/page.tsx
 
-import { hospitals } from '@/app/data/Hospital';
-import { Metadata } from 'next';
 import HospitalPageClient from './HospitalPageClient';
-import { notFound } from 'next/navigation';
-import Script from 'next/script';
 
-// Define a type for the component's props
-type Props = {
-  params: Promise<{ slug: string }>; // ✅ must be Promise in Next.js 15
-};
-
-// --- NEW: A dedicated async function to get hospital data ---
-async function getHospital(slug: string) {
-  const hospitalId = Number(slug);
-  const hospital = hospitals.find((h) => h.id === hospitalId);
-  return hospital;
+// This page now simply renders the client component.
+export default function Page() {
+  return <HospitalPageClient />;
 }
-
-// --- SEO METADATA FUNCTION ---
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { slug } = await params; // ✅ await params
-  const hospital = await getHospital(slug);
-
-  if (!hospital) {
-    return { title: 'Hospital Not Found' };
-  }
-
-  const seo = hospital.seo;
-  const title =
-    seo?.title || `Best Hospital in ${hospital.location} | ${hospital.name}`;
-  const description =
-    seo?.description ||
-    `${hospital.name} is a leading multispecialty hospital in ${hospital.location}.`;
-  const keywords =
-    seo?.keywords ||
-    [hospital.name, hospital.location, 'hospital', 'healthcare'];
-  const canonical =
-    seo?.canonical ||
-    `https://cureplushospitals.com/our-hospitals/${hospital.id}`;
-
-  return {
-    title,
-    description,
-    keywords,
-    alternates: {
-      canonical: canonical,
-    },
-    openGraph: {
-      title,
-      description,
-      url: canonical,
-      images: [
-        {
-          url: `https://cureplushospitals.com${hospital.imageUrl}`,
-          alt: title,
-        },
-      ],
-      type: 'website',
-    },
-    robots: {
-      index: true,
-      follow: true,
-    },
-  };
-}
-
-// --- MAIN PAGE COMPONENT (SERVER COMPONENT) ---
-const Page = async ({ params }: Props) => {
-  const { slug } = await params; // ✅ await params
-  const hospital = await getHospital(slug);
-
-  if (!hospital) {
-    notFound();
-  }
-
-  return (
-    <>
-      {/* Add JSON-LD Schema Markup here */}
-      {hospital.jsonLd && (
-        <Script
-          id="hospital-schema"
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(hospital.jsonLd),
-          }}
-        />
-      )}
-      <HospitalPageClient hospital={hospital} />
-    </>
-  );
-};
-
-export default Page;

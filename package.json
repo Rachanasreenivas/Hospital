@@ -9,9 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "eslint-config-next": "latest",
     "framer-motion": "^12.23.13",
     "lucide-react": "^0.544.0",
-    "next": "^15.5.2",
+    "next": "latest",
     "nodemailer": "^7.0.6",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
@@ -25,7 +26,6 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
-    "eslint-config-next": "15.1.7",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
