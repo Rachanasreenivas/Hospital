@@ -456,11 +456,9 @@ export const hospitals: Hospital[] = [
     services: [ { label: 'General Medicine', icon: 'FaUserMd' }, { label: 'Emergency Care', icon: 'FaUserMd' }, { label: 'Gynecology', icon: 'FaUserMd' }, { label: 'Pediatrics', icon: 'FaUserMd' } ],
     facilities: [ { label: '16+ Beds', icon: 'FaBed' }, { label: 'Multi-Specialty Care', icon: 'FaHospitalAlt' }, { label: 'Medico-Social Welfare Desk', icon: 'FaHospitalAlt' }, { label: '24/7 Ambulance Service', icon: 'FaHospitalAlt' }, { label: '24/7 Pharmacy Services', icon: 'FaHospitalAlt' }, { label: 'OPD & IPD Services', icon: 'FaXRay' }, { label: 'X-Ray', icon: 'FaXRay' }, { label: 'Pathology Lab', icon: 'FaXRay' } ],
     infrastructure: 'Equipped with essential diagnostic and treatment facilities to deliver efficient and modern care in a rural setting.',
-<<<<<<< HEAD
-    contact: { address: 'Main Road, Santhamarahalli, Chamarajnagar, Karnataka - 571115', phone: '08226-297298', mapIcon: 'FaMapMarkerAlt', phoneIcon: 'FaPhoneAlt', googleMapUrl: 'https://maps.app.goo.gl/uX3fDqYqG3g5jG1C8', embedMapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3902.138495561166!2d76.97779137483983!3d12.03541743118222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baf0f3a3952f19d%3A0x6b4a1a5ea93335e3!2sCureplus%20Dharani%20Hospital!5e0!3m2!1sen!2sin!4v1720444319803!5m2!1sen!2sin' },
-=======
+
     contact: { address: 'Main Road, Santhamarahalli, Chamarajnagar, Karnataka - 571115', phone: '08226-297298', mapIcon: 'FaMapMarkerAlt', phoneIcon: 'FaPhoneAlt', googleMapUrl: 'https://maps.app.goo.gl/zqJAc544CM8z1v5t8', embedMapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3902.138495561166!2d76.97779137483983!3d12.03541743118222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baf0f3a3952f19d%3A0x6b4a1a5ea93335e3!2sCureplus%20Dharani%20Hospital!5e0!3m2!1sen!2sin!4v1720444319803!5m2!1sen!2sin' },
->>>>>>> c4ec19d (google maps)
+
     seo: {
       title: '24x7 Best Hospital in Santhemarahalli | CurePlus Dharani',
       description: 'Looking for a hospital near Santhemarahalli? CurePlus Dharani offers round-the-clock care with gynecologists, orthopedic specialists, maternity care & bone and joint treatment under one roof.',
